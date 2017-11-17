@@ -146,13 +146,9 @@ public class Graph {
 								System.out.println("Please construct the graph first by using graph keyword");
 								break;
 							}
-						  long startTime2=System.currentTimeMillis();
 						  Prims.findPath();
-						  long endTime2=System.currentTimeMillis();
-						  System.out.println("Time Taken in milli seconds: "+(endTime2-startTime2));
 						  System.out.println("Minimum Spanning Tree : ");
-
-							for (int key : Prims.visitedmap.keySet()) {
+						  for (int key : Prims.visitedmap.keySet()) {
 								System.out.println(key + "->" + Prims.visitedmap.get(key));
 							}
 						  break;
@@ -173,6 +169,10 @@ public class Graph {
 								d.generatePath();
 								long endTime=System.currentTimeMillis();
 								System.out.println("Time Taken in milli seconds for Dijkstra Algorithm: "+(endTime-startTime));
+								long startTime2=System.currentTimeMillis();
+								Prims.findPath();
+								long endTime2=System.currentTimeMillis();
+								System.out.println("Time Taken in milli seconds: "+(endTime2-startTime2));
 			}
 		}
 	}
