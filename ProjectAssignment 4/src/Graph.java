@@ -172,7 +172,7 @@ public class Graph {
 								long startTime2=System.currentTimeMillis();
 								Prims.findPath();
 								long endTime2=System.currentTimeMillis();
-								System.out.println("Time Taken in milli seconds: "+(endTime2-startTime2));
+								System.out.println("Time Taken in milli seconds for Prim's algorithm: "+(endTime2-startTime2));
 			}
 		}
 	}

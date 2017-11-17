@@ -11,6 +11,7 @@ public class Dijkstra {
 	{
 		this.VertexList=VertexList;
 	}
+	
 	public void generatePath()
 	{
 		Vertex source;
