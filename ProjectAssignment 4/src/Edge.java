@@ -1,4 +1,10 @@
-
+/****************************************************/
+// Filename: Edge.java
+// Change history:
+// 11.17.2017 
+/****************************************************/
+/* This class represents the edge of the graph
+/****************************************************/
 public class Edge {
 
 	public int sourceID;

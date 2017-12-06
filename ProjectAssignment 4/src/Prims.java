@@ -1,4 +1,10 @@
-
+/****************************************************/
+// Filename: Dijkstra.java
+// Change history:
+// 11.17.2017 / 
+/****************************************************/
+/* This class is responsible for performing Prim's algorithm on he given graph
+/****************************************************/
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -12,6 +18,7 @@ public class Prims {
     static Map<Integer, Integer> visitedmap;
     static HashMap<Integer, ArrayList<Edge>> input;
     static int parent;
+    static int totalWeight=0;
 
     static void findPath() {
 
@@ -33,6 +40,7 @@ public class Prims {
             parent = min.getKey();
             if (parent != 0) {
                 visitedmap.put(parent, unvisitedmap.get(parent).getNeighbor());
+                totalWeight+=unvisitedmap.get(parent).mindist;
             }
             unvisitedmap.remove(parent);
 
